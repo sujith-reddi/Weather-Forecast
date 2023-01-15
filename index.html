@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="weather, current, forecast, Openweather">
+    <meta name="description" content="Get current weather, 3-hourly forecast 5 days for your city.">
+    <meta name="author" content="Sujith Kumar Reddy">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <input type="search" list="cities" name="search" id="search" autocomplete="off" onfocus="this.value=''" placeholder="Enter city" />
+        <datalist id="cities"></datalist>
+        <article id="current-forecast">
+            <section>
+                <section id="current-forecast-location">
+                    <h1 class="place-time">City, State As of Time</h1>
+                </section>
+                <section id="weather-details">
+                    <section>
+                        <p class="temp">Temperature</p>
+                        <p class="description">Description</p>
+                        <div class="loc-details">
+                            <div>
+                                <img src="assests/sunrise.jpg" alt="sunrise" class="weather-icon" title="Sunrise"><span class="sunrise"></span>
+                            </div>
+                            <div>
+                                <img src="assests/sunset.jpg" alt="sunset" class="weather-icon" title="Sunset"><span class="sunset"></span>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="loc-details-container">
+                        <div class="loc-details">
+                            <div><img src="assests/high-low.jpg" alt="high low" class="weather-icon" title="Temperature">High/Low </div><div class="min-max-temp right"></div>
+                        </div>
+                        <div class="loc-details">
+                            <div><img src="assests/wind.jpg" alt="wind speed" class="weather-icon" title="Wind">Wind </div><div class="wind right"></div>
+                        </div>
+                        <div class="loc-details">
+                            <div><img src="assests/pressure.jpg" alt="pressure" class="weather-icon" title="Pressure">Pressure </div><div class="pressure right"></div>
+                        </div>
+                        <div class="loc-details">
+                            <div><img src="assests/visibility.jpg" alt="visibility" class="weather-icon" title="Visibility">Visibility </div><div class="visibility right"></div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </article>
+        <article id="feels-like">
+            <h1>Feels Like</h1>
+            <p class="feels-like-temp">--</p>
+        </article>
+        <article id="humidity">
+            <h1>Humidity</h1>
+            <p class="humidity-value">--</p>
+        </article>
+        <article id="hourly-forecast">
+            <h1>Hourly Forecast</h1>
+            <section class="hourly-container">--</section>
+        </article>
+        <article id="five-day-forecast">
+            <h1>5-Day Forecast</h1>
+            <section class="five-day-forecast-container">--</section>
+        </article>
+    </main>
+    <footer>
+        Data provided by OpenWeatherMap
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
