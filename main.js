@@ -1,4 +1,4 @@
-import { API_KEY } from "./config";
+import { API_KEY } from "./config.js";
 
 const DAYS_OF_THE_WEEK = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
 let selectedCityText, selectedCity;
